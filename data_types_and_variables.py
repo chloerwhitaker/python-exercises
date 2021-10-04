@@ -192,11 +192,115 @@ premium_member = False
 
 Product_offer = (more_than_two and not expired) or premium_member
 
-
-# In[56]:
-
-
 Product_offer
+# Exercise 5. 
+# - Use the following code to follow the instructions below:
+#     - username = 'codeup'
+#     - password = 'notastrongpassword'
+# - Create a variable that holds a boolean value for each of the following conditions:
+# 
+#     - the password must be at least 5 characters
+#     - the username must be no more than 20 characters
+#     - the password must not be the same as the username
+#     - bonus neither the username or password can start or end with whitespace
+# 
+# 
+
+# In[3]:
+
+
+username = 'codeup'
+
+
+# In[4]:
+
+
+password = 'notastrongpassword'
+
+
+# In[5]:
+
+
+
+at_least_5 = len(password)>=5
+
+
+# In[6]:
+
+
+at_least_5
+
+
+# In[7]:
+
+
+twenty_only = len(username)<=20
+
+
+# In[8]:
+
+
+twenty_only
+
+
+# In[12]:
+
+
+unique_credentials = password != username
+
+
+# In[13]:
+
+
+unique_credentials
+
+
+# In[21]:
+
+
+leading_whitespace_password = password[0] in ' '
+
+
+# In[22]:
+
+
+trailing_whitespace_password = password[-1] in ' '
+
+
+# In[23]:
+
+
+leading_whitespace_username = username[0] in ' '
+
+
+# In[24]:
+
+
+trailing_whitespace_username = username[-1] in ' '
+
+
+# In[25]:
+
+
+leading_whitespace_password
+
+
+# In[26]:
+
+
+trailing_whitespace_password
+
+
+# In[27]:
+
+
+leading_whitespace_username
+
+
+# In[28]:
+
+
+trailing_whitespace_username
 
 
 # In[ ]:
